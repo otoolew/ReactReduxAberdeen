@@ -6,8 +6,9 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import configureStore from './Store/configureStore';
 import {Provider} from 'react-redux';
-
+import {loadCourses} from './Actions/courseActions';
 const store = configureStore();
+store.dispatch(loadCourses());
 ReactDOM.render
 (
     <Provider store = {store}>

@@ -16,8 +16,7 @@ const Header = () => (
       <div>
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/courses">Courses</Link></li>
-          <li><Link to="/addcourse">Manage Courses</Link></li>
+          <li><Link to="/courses">Courses</Link></li>      
           <li><Link to="/questions">Questions</Link></li>
         </ul>
 
@@ -25,7 +24,7 @@ const Header = () => (
 
         <Route exact path="/" component={HomePage} />
         <Route path="/courses" component={CoursePage} />
-        <Route path="/addcourse" component={ManageCoursePage} />
+        <Route path="/course/:id" component={ManageCoursePage} />
         <Route path="/questions" component={QuestionList} />
       </div>
     </Router>

@@ -23,9 +23,10 @@ const Header = () => (
         <hr />
 
         <Route exact path="/" component={HomePage} />
-        <Route path="/courses" component={CoursePage} />
+        <Route path="/course" component={ManageCoursePage} />
         <Route path="/course/:id" component={ManageCoursePage} />
         <Route path="/questions" component={QuestionList} />
+        <Route path="/courses" component={CoursePage} />
       </div>
     </Router>
   </header>

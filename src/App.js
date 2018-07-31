@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import './App.css';
 import Header from './ClientApp/Home/Header';
-import Main from '../src/Main'
 class App extends React.Component {
   render() {
     return (

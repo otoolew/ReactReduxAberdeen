@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 import HomePage from './HomePage';
 import QuestionList from '../Questions/QuestionList';
-import CourseForm from '../Course/CourseForm';
+import ManageCoursePage from '../Course/ManageCoursePage';
 import CoursePage from '../Course/CoursePage';
 
 
@@ -25,7 +25,7 @@ const Header = () => (
 
         <Route exact path="/" component={HomePage} />
         <Route path="/courses" component={CoursePage} />
-        <Route path="/addcourse" component={CourseForm} />
+        <Route path="/addcourse" component={ManageCoursePage} />
         <Route path="/questions" component={QuestionList} />
       </div>
     </Router>
